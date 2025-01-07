@@ -1,0 +1,169 @@
+.homePage {
+  min-height: 100vh;
+  padding-bottom: 60px;
+}
+
+.heroSection {
+  height: 600px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../../assets/images/banner.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 60px;
+
+  .heroContent {
+    max-width: 800px;
+    padding: 0 20px;
+
+    h1 {
+      color: #ffffff;
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .heroText {
+      font-size: 1.5rem;
+      margin-bottom: 30px;
+      color: #ffffff;
+    }
+
+    button.heroContentButton {
+      font-size: 1.2rem;
+      height: auto;
+      padding: 12px 40px;
+      background: #2d3436;
+      border: none;
+      color: #ffffff;
+      transition: background 0.3s ease;
+    
+      &:hover {
+        background: #636e72;
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+.introSection {
+  max-width: 1200px;
+  margin: 0 auto 60px;
+  padding: 0 20px;
+
+  .introImage {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  h2 {
+    margin-bottom: 24px;
+    color: #2d3436;
+  }
+
+  p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #636e72;
+  }
+}
+
+.varietiesSection {
+  max-width: 1200px;
+  margin: 0 auto 60px;
+  padding: 0 20px;
+
+  .sectionTitle {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .varietyCard {
+    height: 100%;
+    
+    img {
+      height: 250px;
+      object-fit: cover;
+    }
+
+    h3 {
+      color: #2d3436;
+      margin-bottom: 16px;
+    }
+
+    .characteristics {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        margin-bottom: 8px;
+        color: #636e72;
+        position: relative;
+        padding-left: 20px;
+
+        &::before {
+          content: "•";
+          color: #ff6b6b;
+          position: absolute;
+          left: 0;
+        }
+      }
+    }
+  }
+}
+
+.tipsSection {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .tipCard {
+    height: 100%;
+    background: #f8f9fa;
+    border: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+
+    h4 {
+      color: #2d3436;
+      margin-bottom: 16px;
+    }
+
+    p {
+      color: #636e72;
+      line-height: 1.6;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .heroSection {
+    height: 400px;
+
+    .heroContent {
+      h1 {
+        font-size: 2rem;
+      }
+
+      .heroText {
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  .introSection,
+  .varietiesSection,
+  .tipsSection {
+    margin-bottom: 40px;
+  }
+}

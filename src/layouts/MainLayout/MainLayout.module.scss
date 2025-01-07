@@ -1,0 +1,177 @@
+.mainLayout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+  color: #2d3436;
+}
+
+.header {
+  background-color: #ffffff;
+  padding: 0 10%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.headerContent {
+  margin: 0 auto;
+  height: 80px;
+}
+
+.logo {
+  height: 60px;
+  border-radius: 50%;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.navItem {
+  color: #2d3436;
+  font-weight: 600;
+  padding: 0 20px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+
+  &:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}
+
+.cartIcon {
+  font-size: 24px;
+  color: #2d3436;
+
+  &:hover {
+    color: #2d3436;
+  }
+}
+
+.main {
+  flex: 1;
+  width: 100%;
+}
+
+.footer {
+  background-color: #283336;
+  color: #ffffff;
+  margin-top: auto;
+}
+
+.footerContent {
+  padding: 40px 10%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footerLeft {
+  flex: 0 0 60%;
+}
+
+.footerRight {
+  flex: 0 0 20%;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.footerSection {
+  margin-bottom: 20px;
+
+  h4 {
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+}
+
+.footerLogo {
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.footerContactList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #bdc3c7;
+  }
+}
+
+.footerLink {
+  cursor: pointer;
+  color: #bdc3c7;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: #ffffff;
+    text-decoration: underline;
+  }
+}
+
+.socialIcons {
+  font-size: 24px;
+  color: #bdc3c7;
+
+  svg {
+    transition: all 0.3s ease;
+
+    &:hover {
+      color: #ffffff;
+      transform: translateY(-2px);
+    }
+  }
+}
+
+.copyright {
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.copyrightText {
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .headerContent {
+    flex-direction: column;
+  }
+
+  .nav {
+    margin-top: 20px;
+  }
+
+  .navItem {
+    padding: 10px;
+  }
+
+  .footerContent {
+    flex-direction: column;
+  }
+
+  .footerLeft,
+  .footerRight {
+    flex: 1 1 100%;
+  }
+
+  .footerRight {
+    margin-top: 30px;
+  }
+
+  .footerSection {
+    text-align: left;
+  }
+}

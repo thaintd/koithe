@@ -1,0 +1,51 @@
+$primary-color: #333;
+$secondary-color: #f5f5f5;
+$text-color: #333;
+
+.profileContainer {
+  margin: 20px;
+  padding: 20px;
+  background-color: $secondary-color;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profileHeader {
+  font-size: 24px;
+  color: $primary-color;
+  font-weight: bold;
+}
+
+.profileInfo {
+  margin-bottom: 20px;
+  margin-top: 10px;
+
+  p {
+    font-size: 16px;
+    color: $text-color;
+    margin: 5px 0;
+  }
+}
+
+.updateButton {
+  background-color: $primary-color;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: ($primary-color, 10%);
+  }
+}
+
+.ant-modal-title {
+  font-weight: bold;
+}
+
+.ant-form-item-label {
+  font-weight: bold;
+  color: $text-color;
+}
